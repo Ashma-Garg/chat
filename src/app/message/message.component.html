@@ -1,5 +1,19 @@
-<div>
-    {{messageContent.message}}
+<div class='messageContainer'>
+    <!-- {{messageContent.message}}
     {{messageContent.timeSent}}
-    {{messageContent.userName}}
+    {{messageContent.userName}} -->
+    <div class="messageData">
+        <span class="sender">
+            {{messageContent.userName}}
+        </span>
+        <span class="timestamp">
+            {{messageContent.timeSent | date:'medium'}}
+        </span>
+    </div>
+    <div class="messageContent">
+        <span class="messageContnt">
+            {{messageContent.message}}
+        </span>
+        
+    </div>
 </div>
